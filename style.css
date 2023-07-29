@@ -3,3 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+#main{
+    overflow-x: hidden;
+}
+#relative{
+    background-image: url('img/coffee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    overflow-x: hidden;
+}
+ #absolute{
+    position: absolute;
+    right: 45%;
+    top: 20%;
+    height: 100px;
+ }
+ #absolute2{
+    position: absolute;
+  right: 20px;
+    width: 100px;
+    height: 100px;
+ }
+ .firstL{
+    color: crimson;
+    font-size:96px;
+    text-shadow: 5px 5px 5px;
+    font-style: italic;
+ }
+ .last{
+    font-style: italic;
+    font-size:26px ;
+    color: white;
+    margin-right: 35px;
+ }
+ .he2{
+    color: white;
+    font-size: 46px;
+    text-align: center;
+ }
+ .advert{
+    color: white;
+    text-align: center;
+    font-style: italic;
+ }
+ #big-Cart{
+    font-size: 76px;
+ }
