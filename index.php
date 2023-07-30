@@ -37,11 +37,11 @@ $selectquery=mysqli_query($connection, $sqlcmd);
     </header>
     <main id="main">
     <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
-        <div class="row justify-content-center align-items-center g-2">
+        <div class="row  align-items-center g-2">
        <?php 
        while($response=mysqli_fetch_array($selectquery)){
         ?>
-     <div class="col">
+     <div class="col-4">
             <div class="card" >
               <img src="<?php echo $response['image'] ?>" class="card-img-top" alt="image" width="200px" height="150px">
               <div class="card-body">
