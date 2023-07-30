@@ -46,9 +46,9 @@ $selectquery=mysqli_query($connection, $sqlcmd);
               <img src="<?php echo $response['image'] ?>" class="card-img-top" alt="image" width="200px" height="150px">
               <div class="card-body">
                 <h5 class="card-title"><?php echo $response['item'] ?></h5>
-                <h6 class="card-subtitle mb-2 text-muted "> <?php echo $response['price'] ?></h6>
+                <h6 class="card-subtitle mb-2 text-muted ">₦ <?php echo $response['price'] ?></h6>
                 <p class="card-text"><?php echo $response['description'] ?></p>
-                <p class="card-text"><?php echo $response['discount'] ?></p>
+                <p class="card-text">%<?php echo $response['discount'] ?></p>
                 <p class="card-text"><?php echo $response['category'] ?></p>
               </div>
             </div>

@@ -31,7 +31,7 @@
 }
 
 #main-form{
-width: 100%;
+width: 80%;
 margin-top: 20px;
 margin-bottom: 20px;
 /* border: 1px solid crimson; */
@@ -40,7 +40,7 @@ padding: 10px;
 border-radius: 20px;
 }
 .inputTxt{
-    width: 100%;
+    width: 90%;
     border: none;
     border-bottom: 1px solid black;
     outline: none;

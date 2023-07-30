@@ -142,7 +142,7 @@ else{
             </div>
             <div>
                 <button name="Add" type="submit" class="mx-4 btn btn-info">Add Product</button>
-                <button type="reset" class="mx-4 btn btn-warning">Clear</button>
+                <button type="reset" class="mx-auto btn btn-warning">Clear</button>
             </div>
         </form>
    </div> 
