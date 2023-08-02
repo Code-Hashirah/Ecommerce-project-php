@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-Step Form Example</title>
+  <style>
+    /* CSS styling for the form */
+    .form-step {
+      display: none;
+    }
+    
+    .form-step.active {
+      display: block;
+    }
+    
+    .btn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form id="multiStepForm"  >
+    <!-- Step 1: Personal Information -->
+    <div class="form-step" id="step1">
+      <h2>Step 1: Personal Information</h2>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required>
+      <br>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required>
+      <br>
+      <button type="button" class="btn" onclick="nextStep(2)">Next</button>
+    </div>
+    
+    <!-- Step 2: Contact Information -->
+    <div class="form-step" id="step2">
+      <h2>Step 2: Contact Information</h2>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" required>
+      <br>
+      <button type="button" class="btn" onclick="prevStep()">Previous</button>
+      <button type="button" class="btn" onclick="nextStep(3)">Next</button>
+    </div>
+    
+    <!-- Step 3: Account Information -->
+    <div class="form-step" id="step3">
+      <h2>Step 3: Account Information</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <br>
+      <button type="button" class="btn" onclick="prevStep()">Previous</button>
+      <button type="submit" class="btn">Submit</button>
+    </div>
+  </form>
+
+  <script>
+    let currentStep = 1;
+    const form = document.getElementById('multiStepForm');
+    const formSteps = form.querySelectorAll('.form-step');
+
+    function showStep(stepNumber) {
+      formSteps.forEach((step) => step.classList.remove('active'));
+      formSteps[stepNumber - 1].classList.add('active');
+      
+    }
+
+    function nextStep(stepNumber) {
+      if (stepNumber === currentStep + 1) {
+        currentStep++;
+        showStep(currentStep);
+      }
+    }
+
+    function prevStep() {
+      if (currentStep > 1) {
+        currentStep--;
+        showStep(currentStep);
+      }
+    }
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      // Process form data here (you can send it to the server using Ajax or other methods)
+      window.alert('Form submitted successfully!');
+    });
+
+    // Show the first step initially
+    showStep(currentStep);
+  </script>
+</body>
+</html>
