@@ -115,7 +115,7 @@ else{
                         <p>Input name here..</p>
                     </div>
                     <div>
-                        <button type="button" onclick="nextStep(1)"><i class="fa fa-user-circle" aria-hidden="true"></i></button>
+                        <button type="button" onclick="nextStep(1)"><i class="fas fa-user-circle" aria-hidden="true"></i></button>
                     </div>
                 </div>
 
@@ -125,7 +125,7 @@ else{
                         <p>Input email here..</p>
                     </div>
                     <div>
-                        <button type="button" onclick="nextStep(2)"><i class="fa fa-user-circle" aria-hidden="true"></i></button>
+                        <button type="button" onclick="nextStep(2)"><i class="fas fa-envelope" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="general-div">
@@ -134,7 +134,7 @@ else{
                         <p>Input pnone number here..</p>
                     </div>
                     <div>
-                        <button type="button" onclick="nextStep(3)"><i class="fa fa-user-circle" aria-hidden="true"></i></button>
+                        <button type="button" onclick="nextStep(3)"><i class="fas fa-phone" aria-hidden="true"></i></button>
                     </div>
                 </div>
 
@@ -144,7 +144,7 @@ else{
                         <p>Input image link</p>
                     </div>
                     <div class="txt-div">
-                        <button type="button" onclick="nextStep(4)"><i class="fa fa-user-circle" aria-hidden="true"></i></button>
+                        <button type="button" onclick="nextStep(4)"><i class="fas fa-image" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="general-div">
@@ -153,7 +153,7 @@ else{
                         <p>Input your password</p>
                     </div>
                     <div class="txt-div">
-                        <button type="button" onclick="nextStep(5)"><i class="fa fa-user-circle" aria-hidden="true"></i></button>
+                        <button type="button" onclick="nextStep(5)"><i class="fas fa-lock" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="general-div">
@@ -162,7 +162,7 @@ else{
                         <p>Re-enter your password</p>
                     </div>
                     <div class="txt-div">
-                        <button type="button" onclick="nextStep(6)"><i class="fa fa-user-circle" aria-hidden="true"></i></button>
+                        <button type="button" onclick="nextStep(6)"><i class="fas fa-lock" aria-hidden="true"></i></button>
                     </div>
                 </div>
 
@@ -240,7 +240,7 @@ else{
       <span class="social"><a href="https://"><i class="fab fa-linkedin text-primary mx-5" aria-hidden="true"></i></a></span>
       <span class="social"><a href="https://"><i class="fab fa-telegram text-info mx-5" aria-hidden="true"></i></a></span>
       <span class="social"><a href="https://"><i class="fab fa-youtube text-danger mx-5" aria-hidden="true"></i></a></span>
-        
+        <small class="text-success mx-5 mx-5"><i class="fas fa-copyright  mx-5 mx-5" aria-hidden="true">code-hashirah</i></small>
     </footer>
 <!-- botstrap javascript  -->
 <script src="form.js"></script>

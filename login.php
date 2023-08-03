@@ -23,10 +23,16 @@ $password=md5($_POST['Password']);
 if(count($errors)==0){
     $sqlCmd="SELECT * FROM user WHERE email= '$email'";
     $select=$connection->query($sqlCmd);
+    
     if($select->num_rows >0){
         $result=$select->fetch_assoc();
         if(strcmp($password, $result['password'])==0){
-            header('Location:dashboard.php');
+            // Start a session
+        session_start();
+
+        // Store the email value in a session variable
+        $_SESSION['email'] = $email;
+            header('Location:dashboard.php?');
         }
         else{
             $errors['loginErr']="Username, Email or Password not correct!";
@@ -50,10 +56,10 @@ if(count($errors)==0){
 </head>
 <body id="body">
     <div class="form">
-      
-      <form action="login.php" method="post">
+      <h2>Login Form</h2>
+      <form action="login.php"  method="post">
         
-      <div class="input-box">
+      <div class="input-box"> <br> 
           <label for="email">Email</label> <br>
           <input  type="email" name="Email" value=" <?php echo array_key_exists('Email', $data)?$data['Email'] :" "?> ">
 
@@ -75,9 +81,9 @@ if(count($errors)==0){
       </div>
 
 
-      <div>
-        <input type="submit" name="Login" value="Login" class="btn btn-success mx-5 my-5">
-        <button type="reset" class="btn btn-warning mx-5 my-5">Clear</button>
+      <div class='text-btn text-center'>
+        <input type="submit" name="Login" value="Login" class="btn btn-success px-5  my-3">
+        <button type="reset" class="btn btn-warning   my-3 px-5">Clear</button>
 </div>
     </form>
 </div>
