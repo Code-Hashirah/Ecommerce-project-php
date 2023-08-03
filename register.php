@@ -242,7 +242,7 @@ else{
       <span class="social"><a href="https://"><i class="fab fa-youtube text-danger mx-5" aria-hidden="true"></i></a></span>
         <small class="text-success mx-5 mx-5"><i class="fas fa-copyright  mx-5 mx-5" aria-hidden="true">code-hashirah</i></small>
     </footer>
-<!-- botstrap javascript  -->
+<!-- botstrap javascript -->
 <script src="form.js"></script>
 <script src="css/boostrap.bundle.min.js"></script>
 </body>
