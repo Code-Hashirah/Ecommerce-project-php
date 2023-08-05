@@ -19,17 +19,13 @@
     border-bottom-left-radius: 40px;
     box-shadow:0 0  15px 0;
     max-width: 450px;
-    /* display: flex; */
     padding: 22px;
     justify-content: center;
-    /* margin: 50px; */
     margin: auto;
     position: relative;
     top: 150px;
     background: rgba(220, 220, 220, 0);
-    /* padding: 50px; */
   backdrop-filter: blur(10px);
-    /* background:transparent; */
 }
 .input-box{
     width: 100%;
@@ -41,12 +37,9 @@
     color: black;
     border: none;
     border-radius: 7px;
-    /* border:1px solid white; */
     padding: 10px;
     background-color: rgba(185, 178, 178, 0.062);
-    /* border-bottom: 1px solid #000033; */
     outline: none;
-    /* background-color: transparent; */
 }
 
 .input-box input:focus{

@@ -85,8 +85,20 @@ else{
 </head>
 <body>
 
-    <header>
-        
+<header>
+        <section id="relative">
+         
+            <div>
+                <i class="fa fa-cart-arrow-down fa-fade text-white mx-4" aria-hidden="true"></i>
+           <i class="fa fa-phone fa-fade text-white mx-4" aria-hidden="true"></i>
+           <i class="fab fa-amazon fa-fade text-white mx-4" aria-hidden="true"></i>
+           <i class="fab fa-reddit-alien fa-fade text-white mx-4" aria-hidden="true"></i>
+        <i class="fab fa-whatsapp fa-fade text-white mx-4" aria-hidden="true"></i>
+        <i class="fab fa-twitter fa-fade text-white mx-4" aria-hidden="true"></i>
+        <i class="fab fa-facebook fa-fade text-white mx-4" aria-hidden="true"></i>
+        </div>
+        <div id="absolute2"><i class="fa fa-cart-plus fa-bounce text-white" id="big-Cart" aria-hidden="true"></i></div>
+        </section>
     </header>
 
   <main id="mainbox">
