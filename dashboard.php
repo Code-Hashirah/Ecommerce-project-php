@@ -1,6 +1,8 @@
 <?php 
 require_once "database.php";
-
+if(!isset($_SESSION['email'])){
+    header('Location:login.php');
+}
 // Start the session
 session_start();
 

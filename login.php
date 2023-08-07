@@ -1,5 +1,8 @@
 <?php 
 require_once "database.php";
+if(isset($_SESSION['email'])){
+    header('Location:dashboard.php');
+}
 $errors=[];
 $data=[];
 if(isset($_POST['Login'])){
@@ -33,7 +36,7 @@ if(count($errors)==0){
         // Store the email value in a session variable
         $_SESSION['email'] = $email;
             header('Location:dashboard.php?');
-        }
+        } 
         else{
             $errors['loginErr']="Username, Email or Password not correct!";
         }
