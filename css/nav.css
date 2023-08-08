@@ -1,0 +1,57 @@
+.sidenav{
+    background-color:#00004d;
+    /* color:white; */
+    /* width: 25%; */
+}
+.sidenav ul{
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+}
+.sidenav li{
+    font-family:Tektur ;
+    font-size: 40px;
+    width: 100%;
+    padding: 20px;
+    width: 900px;
+    margin: 15px;
+    color: white;
+}
+.sidenav i{
+    margin-right: 20px;
+}
+.links{
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+.sidenav ul li:hover{
+    background-color: white;
+    color: #00004d;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+
+.sidenav ul li:hover .links{
+    background-color: white;
+    color: #00004d;
+
+}
+
+.sidenav ul li:active .links{
+    background-color: white;
+    color: #00004d;
+
+}
+
+.top-details{
+    display: flex;
+    justify-content: space-between;
+}
+.side-details{
+    display: flex;
+}
+.side-details img{
+    border-radius: 50%  ;
+}
