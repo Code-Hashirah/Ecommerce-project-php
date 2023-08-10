@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 #mainbox{
-    width: 100%;
+    /* width: 100%; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/header.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -22,7 +22,7 @@
     box-shadow: 5px 5px 5px;
     border-radius: 10px;
     opacity: 90%;
-    max-width: 60%;
+    /* max-width: 60%; */
     display: flex;
     justify-content: center;
     margin-left: auto;

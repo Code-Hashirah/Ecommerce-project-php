@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/all.min.css">
-   <link rel="stylesheet" href="css/product.css">
-   <link rel="stylesheet" href="css/footer.css">
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/all.min.css">
+   <link rel="stylesheet" href="../css/product.css">
+   <link rel="stylesheet" href="../css/footer.css">
    <title>Add Product</title>
 </head>
-<body>
+<body class="container-fliud">
 
+<div class="row">
 <aside class="col-md-3 sidenav ">
-<?php require "includes/nav.php" ?>
+<?php require "../includes/nav.php" ?>
 
 </aside>
 
-  <main id="mainbox">
+  <main id="mainbox" class="col-md-9">
   <h2 id="header">Add Products</h2>
-   <div class="container-fliud" id="form-box">
+   <div class="" id="form-box">
         <form action="addproduct.php" id="main-form" method="post">
             <div>
                 <label for="" class="lbl">Item</label>
@@ -75,6 +76,7 @@
         </form>
    </div> 
   </main>
+</div>
 
   <footer>
       <span class="social"><a href="https://wa.me/09053109638"><i class="fab fa-whatsapp mx-5 text-success" aria-hidden="true"></i></a></span>
